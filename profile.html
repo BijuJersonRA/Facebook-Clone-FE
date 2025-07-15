@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Clone</title>
+    <title>Facebook Clone - Profile page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./profile.css">
     <script src="https://kit.fontawesome.com/009a36698a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -71,67 +72,50 @@
         </div>
     </nav>
 
-    <div class="container">
-        <!-------------- left-sidebar------------- -->
-        <div class="left-sidebar">
-            <div class="imp-links">
-                <a href="#"><img src="./assets/news.png"> Latest News</a>
-                <a href="#"><img src="./assets/friends.png"> Friends</a>
-                <a href="#"><img src="./assets/group.png"> Group</a>
-                <a href="#"><img src="./assets/marketplace.png"> Marketplace</a>
-                <a href="#"><img src="./assets/watch.png"> Watch</a>
-                <a href="#">See More</a>
+    <div class="profile-container">
+        <img src="./assets/cover.png" class="cover-img" alt="">
+        <div class="profile-details">
+            <div class="profile-detail-left">
+                <div class="profile-detail-row">
+                    <img src="./assets/profile.png" class="pd-image" alt="">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src="./assets/member-1.png" alt="">
+                        <img src="./assets/member-2.png" alt="">
+                        <img src="./assets/member-3.png" alt="">
+                        <img src="./assets/member-4.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="shortcut-links">
-                <p>Your Shortcuts</p>
-                <a href="#"><img src="./assets/shortcut-1.png"> Web Developers</a>
-                <a href="#"><img src="./assets/shortcut-2.png"> Web Design course</a>
-                <a href="#"><img src="./assets/shortcut-3.png"> Full Stack Development</a>
-                <a href="#"><img src="./assets/shortcut-4.png"> Website Experts</a>
+            <div class="profile-detail-right">
+                <button type="button"><img src="./assets/add-friends.png" alt=""> Friends</button>
+                <button type="button"><img src="./assets/message.png" alt=""> Message</button>
+                <br>
+                <a href="#"><img src="./assets/more.png" alt=""></a>
             </div>
         </div>
-        <!-------------- middle-sidebar------------- -->
-        <div class="middle-bar">
-            <div class="story-gallery">
-                <div class="story story1">
-                    <img src="./assets/upload.png">
-                    <p>Post Story</p>
-                </div>
-                <div class="story story2">
-                    <img src="./assets/member-1.png">
-                    <p>Alison</p>
-                </div>
-                <div class="story story3">
-                    <img src="./assets/member-2.png">
-                    <p>Jackson</p>
-                </div>
-                <div class="story story4">
-                    <img src="./assets/member-3.png">
-                    <p>Samona</p>
-                </div>
-                <div class="story story5">
-                    <img src="./assets/member-4.png">
-                    <p>John Doe</p>
-                </div>
-            </div>
-            <div class="write-post-container">
-                <div class="user-profile">
-                    <img src="./assets/profile-pic.png">
-                    <div>
-                        <p>John Nicholson</p>
-                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+        <div class="profile-info">
+            <div class="info-col"></div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="./assets/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="./assets/live-video.png"> Live Video</a>
+                            <a href="#"><img src="./assets/photo.png"> Photo/Video</a>
+                            <a href="#"><img src="./assets/feeling.png"> Feeling/Activity</a>
+                        </div>
                     </div>
                 </div>
-                <div class="post-input-container">
-                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
-                    <div class="add-post-links">
-                        <a href="#"><img src="./assets/live-video.png"> Live Video</a>
-                        <a href="#"><img src="./assets/photo.png"> Photo/Video</a>
-                        <a href="#"><img src="./assets/feeling.png"> Feeling/Activity</a>
-                    </div>
-                </div>
-            </div>
-            <div class="post-container">
+                <div class="post-container">
                 <div class="post-row">
                     <div class="user-profile">
                         <img src="./assets/profile-pic.png">
@@ -251,62 +235,6 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="load-more-btn">Load More</button>
-        </div>
-        <!-------------- right-sidebar------------- -->
-        <div class="right-sidebar">
-            <div class="sidebar-title">
-                <h4>Events</h4>
-                <a href="#">See All</a>
-            </div>
-            <div class="event">
-                <div class="left-event">
-                    <h3>18</h3>
-                    <span>March</span>
-                </div>
-                <div class="right-event">
-                    <h4>Social Media</h4>
-                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
-                    <a href="#">More Info</a>
-                </div>
-            </div>
-            <div class="event">
-                <div class="left-event">
-                    <h3>22</h3>
-                    <span>June</span>
-                </div>
-                <div class="right-event">
-                    <h4>Mobile Marketing</h4>
-                    <p><i class="fa-solid fa-location-dot"></i> Techno Industry</p>
-                    <a href="#">More Info</a>
-                </div>
-            </div>
-            <div class="sidebar-title">
-                <h4>Advertisement</h4>
-                <a href="#">Close</a>
-            </div>
-            <img src="./assets/advertisement.png" class="sidebar-ads">
-            <div class="sidebar-title">
-                <h4>Conversation</h4>
-                <a href="#">Hide Chat</a>
-            </div>
-            <div class="online-list">
-                <div class="online">
-                    <img src="./assets/member-1.png" alt="">
-                </div>
-                <p>Alison Mina</p>
-            </div>
-            <div class="online-list">
-                <div class="online">
-                    <img src="./assets/member-2.png" alt="">
-                </div>
-                <p>Jackson Aston</p>
-            </div>
-            <div class="online-list">
-                <div class="online">
-                    <img src="./assets/member-3.png" alt="">
-                </div>
-                <p>Samona Rose</p>
             </div>
         </div>
     </div>
